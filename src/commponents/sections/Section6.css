@@ -1,0 +1,146 @@
+#section6{
+    background-color: var(--bg-color);
+    color: white;
+
+    #container6 {
+        display: flex;
+        margin: 30 auto;
+        padding: 50px;
+
+        #send-msg, #contact-info {
+            width: 50%;
+        }      
+    }
+ #footer {
+        display: flex;
+        margin: 20px auto;
+        color: white;
+        font-size: 20px;
+        p {
+            margin: 10px auto;
+        }
+    }
+}
+
+#titre{
+    font-size: 25px;
+    padding: 20px 0;
+    margin: 10px;
+}
+h4 {
+    margin: 10px;
+    width: 80%;
+    font-size: 18px;
+}
+#name,#email,#subject,#message {
+background-color: var(--bg-color);
+border: 1px solid var(--SpanColr);
+color: white;
+margin: 10px auto;
+width: 80%;
+font-size: 20px;
+padding: 20px; 
+border-radius: 10px;
+}
+#send{
+    margin: 10px;
+    width: fit-content;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: var(--SpanColr);
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+#e-mail,#phone, #adress {
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+    padding: 10px;
+
+    #ICON{
+      color: white ;  
+      border: 1px solid var(--SpanColr);   
+      padding: 20px;
+      font-size: 25px;
+      border-radius: 10px;
+    }
+     h3 { padding: 5px; color: var(--SpanColr);}
+     p { padding: 5px;}
+}
+#social-media {
+    padding: 20px;
+    font-size: 25px;
+    #links{
+        display: flex;
+        margin: 20px;
+     #social {
+       margin-right: auto;
+       color: white ;  
+       border: 1px solid var(--SpanColr);   
+       padding: 20px;
+       font-size: 30px;
+       border-radius: 10px;
+    }}
+}
+/* #links {position: relative;}
+#links ::before{
+    position: absolute;
+    content: "facebook";
+    color: red;
+    top: 0;
+    left: 1;
+    
+} */
+
+ /* @media screen and (max-width: 910px) {
+    #container6 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+      
+        #send-msg, #contact-info {
+            width: 100%;
+        }
+    }
+} */
+@media screen and (max-width: 910px) {
+    #container6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        #send-msg, #contact-info {
+            width: 100%;
+            /* h4{
+                font-size: 10px;
+            }
+            h2{
+                font-size: 20px;
+            }
+            #e-mail, #phone, #adress {
+                #ICON{
+                    font-size: 10px;
+                    svg{ font-size: 20px;}
+                }
+            }
+            #email-info, #phone-info, #adress-info {
+                p {
+                    font-size: 10px;
+                }
+            }
+            #social-media {
+                p{ font-size: 20px;}
+                #social { font-size: 5px;}
+                svg {font-size: 10px;}
+            }
+            
+            
+        } */
+
+    }
+}
+}

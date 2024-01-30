@@ -1,0 +1,96 @@
+#section5{
+    background-color: var(--bg-color);
+    color: white;
+
+    #container5{
+        margin: 50px auto;
+        width: 80%;
+
+        #projects{
+            display: flex;
+            flex-wrap: wrap;
+            
+                #project{
+                width: 40%;
+                position: relative;
+                margin: 10px auto;
+                    }
+                }
+
+        #boutton {
+
+        /* pour que la bouttopn "pagination" sera au centre */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            #pagination {
+                width: fit-content;
+                font-size: 30px;
+                margin: 10px;
+                padding: 10px 20px;
+                background-color: var(--SpanColr);
+                color: black;
+                border-radius: 20px;
+                cursor: pointer;
+                text-align: center;
+      
+            }
+        }
+     
+    }
+}
+
+#project{
+/* Already position relative we make it on the top of the code */
+
+  #info{
+        position: absolute;
+        padding: 30px;
+        height: 95%;
+        width: 100%;
+        background-color:#5B5D65;
+        border: 1px solid var(--SpanColr);
+        transition: 3s;
+
+    }
+    
+       #information {
+        padding:20px;
+        height:90%;
+        width: 100%;
+        border: 2px solid white; 
+        text-align: center;
+
+    }
+    h2{
+        margin: 10px;
+    }
+    #titr{
+        color: var(--SpanColr);
+        margin: 10px;
+    }
+    #tools{
+        margin: 10px;
+        font-size:15px;
+    }}
+
+#project:hover #info {
+    opacity: 0; 
+    /* OR */
+     /* height: 0;
+     width: 0; */
+} 
+
+
+@media screen and (max-width:910px) {
+    #container5 {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        #project{
+            width: 80% !important;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap');
+/*  to apply in all the project  */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+
+
+--bg-color:#070d1b;
+--textColr:#fdfeff;
+--SpanColr:#FE5993;
+
+}
+
+
+body {
+  background-color: var(--bg-color);
+
+  /* TO TRANSFORM THE FIRST LATTER MAJ  */
+  /* text-transform: capitalize; */
+  /* font family */
+  /* font-family: 'Merriweather', serif;
+  font-family: 'Playfair Display', serif; */
+  
+}
+ul li{
+  list-style: none;
+}
+

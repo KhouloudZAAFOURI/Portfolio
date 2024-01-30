@@ -1,0 +1,150 @@
+
+ #section3a {
+  
+    width: 100%;
+   
+    #coontainer3a{
+        display: flex;
+        margin: 30px auto;
+     
+
+     #skills {
+        margin: 80px;
+        width: 50% ;
+
+        h1{
+            font-size: 30px;
+            color: var(--textColr);
+        }
+        #tooltip {
+            color: var(--textColr);
+            position: relative;
+
+
+            #quote{
+
+                width: 75%;
+                margin: 30px auto;
+                position: relative;
+                border: 2px solid var(--SpanColr) !important;
+                padding: 30px;
+                font-size: 30px;
+                border-radius: 20px;
+                text-align: center;
+
+            }
+              span {
+                z-index: 100;
+
+              }
+                #img{
+                    display: flex;
+                    border-radius: 50%;
+                    width: 100px;
+                    height: 100px;
+                    margin: 30px auto; 
+                    }
+                }
+    }
+    #skillsProgress{
+        width: 50% ;
+        padding: 3%;
+        color: var(--textColr);
+
+        #progresses{
+            width: 100%;
+            margin: 2rem 0;
+
+            /* TITLE HTML AND OTHER  */
+            h4{
+                margin: 10px 0;
+                font-size: 25px;
+            }
+
+            #progess{
+                width: 100%;
+                height: 5px;
+                background-color: var(--textColr);
+
+                /* THE PERCENT */
+                #level{
+                    
+                    height: 100%;
+                    background-color:var(--SpanColr);
+                    z-index: 3;
+                    position: relative;
+                    transition: 4s;
+
+
+                   span{
+                        position: absolute;
+                        right: -25px;
+                        top: -25px;
+                        color: var(--SpanColr);
+                    }
+                }
+                }
+        
+        }
+    }
+}
+    }
+#img:hover {
+    transform:scale(1.1);
+    opacity: .9;
+}
+
+/* Tooltip */
+
+/*  SOLUTION 1 osama zero*/
+/* #quote::before{
+    content: "";
+    position: absolute;
+    border: 20px solid ;
+    border-color: var(--SpanColr) transparent transparent transparent;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+
+/* SOLUTION 2  with a span on js  */
+
+#tooltip span{
+    
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: var(--bg-color) ;
+    border-bottom: 2px solid var(--SpanColr);
+    border-right: 2px solid var(--SpanColr);
+    bottom: 110px;
+    left: 50%;
+    transform: translateX(-50%) rotateZ(45deg);
+    z-index: 3;
+}
+
+/* solution 3 */
+/* #quote::before{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid ;
+    border-color:transparent var(--SpanColr) var(--SpanColr) transparent ;
+    background-color:var(--bg-color);
+    bottom: -29px;
+    left: 50%;
+    transform:rotateZ(45deg)translateX(-50%);
+} */
+
+
+
+    @media screen and (max-width:900px) {
+   
+            #coontainer3a{
+                flex-wrap: wrap;
+                justify-content: center; 
+        
+            }    
+          
+        }

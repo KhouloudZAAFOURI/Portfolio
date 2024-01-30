@@ -1,0 +1,71 @@
+#section3{
+    background-color: var(--bg-color);
+}
+
+#container3 {
+    width:100%;    
+    display: flex;
+    color: var(--textColr);
+    padding:5% ;
+    text-align: center;
+    font-size: 20px;
+    text-wrap: wrap;
+    flex-wrap: wrap; 
+    /* align-items: center; */
+    
+
+    #service{
+        width:30%;
+        margin: 20px auto;
+        border: 1px solid var(--textColr);
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px  var(--SpanColr);
+
+        h3{
+            color: var(--SpanColr);
+
+        }
+        p {
+            padding: 5px;
+        }
+        #icon {
+
+            display: flex;
+            align-items: center;
+            color: var(--textColr);
+            border: 1px solid var(--textColr);
+            transition: 0.4s;
+            opacity: 0.5;
+            font-size: 40px;
+            border-radius: 50px;
+            padding: 10px;
+            /* Pour que le div de l'icon devient centrer  */
+            width: 4rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 10px auto;
+
+        }
+    }
+}
+
+/*  WHEN WE HOVER ON THE DIV SERVICE WHICH INCLUDE THE ICON  */
+#service:hover#service #icon{
+  opacity: 1;
+color: var(--SpanColr);
+border-color: var(--SpanColr);
+border-radius: 10px;
+}
+
+@media screen and (max-width:900px) {
+    #container3  #service  {
+        width: 80%;
+           
+    }
+}
+
+
+
+
+
+

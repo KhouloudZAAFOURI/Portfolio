@@ -1,0 +1,109 @@
+
+#section4 {
+  
+   width: 100%;
+   color: white;
+   background-color: var(--bg-color);
+
+
+    #container4 {
+        display: flex;
+        width: 80%;
+        margin: 50px auto;
+
+     #experiences,  #educations {
+        margin: 10px;
+        width: 50% ;
+
+        #experience, #education {
+            display: flex;
+            gap: 50px;
+
+            h2{
+                font-size: 40px;
+                letter-spacing: 2px;
+                -webkit-text-fill-color: white;
+                /* la bordure du mot */
+                /* -webkit-text-stroke: 1px white; */
+                width: fit-content;
+                position: relative;
+
+            }
+            #icon {
+                font-size: 40px;
+             }
+    }
+   }
+}
+}
+#exps, #academy {
+border-left:1px solid white;
+padding: 3px 10px;
+margin: 20px;
+#exp, #educ {
+    padding: 10px;
+    h2{
+        color: var(--SpanColr);
+        font-size: 30px;
+        padding-bottom: 10px;
+        position: relative;
+
+    }
+    p{
+        padding-top: 10px;
+    } 
+}
+}
+
+
+/* fill the text with the span color when we hover on it */
+#experience h2::before {
+    position: absolute;
+    content: "Experiences";
+    left: 0;
+    top: 0;
+    -webkit-text-fill-color: var(--SpanColr);
+    width: 0;
+    overflow: hidden;
+    transition: 5s;
+}
+#education h2::before {
+    position: absolute;
+    content: "Education";
+    left: 0;
+    top: 0;
+    -webkit-text-fill-color: var(--SpanColr);
+    width: 0;
+    overflow: hidden;
+    transition: 5s;
+}
+#experience h2:hover::before, #education h2:hover::before {
+    width: 100%;    
+}
+
+
+
+/* les points dans border left  */
+#exp h2::before, #educ h2::before {
+    content: "";
+    position: absolute;
+    background-color: var(--bg-color);
+    border: 2px solid  var(--SpanColr);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    bottom: 15px;
+    transform: translateX(-140%);
+}
+
+
+@media screen and (max-width:900px) {
+    #container4{
+        flex-wrap: wrap;
+        justify-content: center;
+
+        #experiences, #educations {
+            width: 100%;
+        }
+    }      
+}

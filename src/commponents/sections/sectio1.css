@@ -1,0 +1,146 @@
+#section1{
+    background: url("../../imges/hero-bg-1.jpg") no-repeat center;
+    width: 100%;
+    height:calc(100vh - 70px);
+    color: var(--textColr);
+    z-index: 11;
+    margin: 0;
+    margin-top: 10px;
+
+    canvas{
+    width: 100% !important;
+}
+}
+
+#section1 div{
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+#imge{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 10px solid #232732;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+h1{
+    font-size: 60px;
+        font-weight: 700;
+        margin: 5px 0;
+
+    & span{
+        color: var(--SpanColr);
+        padding: 0 0.5rem;
+        letter-spacing: 2px;
+        font-size: 60px;
+        font-weight: 700;
+    }
+}
+p { 
+    font-size: 20px;
+    color: var(--textColr);
+
+}
+ul{
+    margin-top: 10px;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    
+    }
+}
+
+   #social li{
+        border-radius: 50%;
+        padding: 4px;
+        display: flex;
+        align-items: center;
+        border: 1px solid transparent;
+        /* color: var(--textColr) !important; */
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+    }
+    #social li:hover{
+        border: 1px solid var(--SpanColr);
+        color: var(--SpanColr);
+    }
+
+    #typed{
+        position: relative;
+    }
+    #typed::after{
+        width: auto;
+        height: 100%;
+        position: absolute;
+        left: 10px;
+        bottom: 0;
+        padding-right:0.5rem ;
+        content: "";
+        border-right: 4px solid var(--SpanColr);
+        animation:typed 4s infinite 0.5s linear;
+        -webkit-animation:typed 4s infinite 0.5s linear;
+    }
+    @keyframes typed {
+        10%{
+            
+            content: "K";
+            border-color: transparent;
+        }20%{
+            content: "Kh";
+            border-color: var(--SpanColr);
+        }
+        30%{
+            content: "Kho";
+            border-color: transparent;
+        }
+        40%{
+            content: "Khou";
+            border-color: var(--SpanColr);
+        }
+        50%{
+            content: "Khoul";
+            border-color: transparent;
+           
+        }
+        60%{
+            content: "Khoulo";
+             border-color: var(--SpanColr);
+        }
+        70%{
+            content: "Khoulou";
+            border-color: transparent;
+        }
+        80%{
+            content: "Khouloud";
+            border-color: var(--SpanColr); 
+        }
+       
+    }
+    
+@media screen and (max-width:1100px) {
+    #section1 div{
+        top: 50%;
+        width: 100%;
+        h1{
+            
+            font-size: 25px;
+            text-align: start;
+            padding-left: 30px}
+            & span {
+                font-size: 25px !important;
+            }
+        }
+        p{
+            padding: 0 1rem;
+        }
+       
+    }
