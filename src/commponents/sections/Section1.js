@@ -1,15 +1,14 @@
 import React from 'react'
 import "../sections/sectio1.css"
+import { FaLinkedin} from "react-icons/fa";
+import { GrGithub } from "react-icons/gr";
+import imge from "../../imges/dev.jpg";
+import { IconContext } from 'react-icons';
+
 // jquery
 import $ from 'jquery';
 import {ripples} from 'jquery.ripples';
-// icons
-import { RiFacebookCircleLine } from "react-icons/ri";
-import { PiTwitterLogo } from "react-icons/pi";
-import { GrGithub } from "react-icons/gr";
-// imge
-import imge from "../../imges/hero-img.jpg";
-import { IconContext } from 'react-icons';
+
 // for the animation 
 import Pulse from 'react-reveal/Pulse';
 
@@ -41,9 +40,8 @@ function Section1() {
             </p>
             <ul id='social'>
             <IconContext.Provider value={{ style: {  cursor:'pointer',fontSize:"35px", color:"white"} }}>
-                <li><a href="https://www.facebook.com/profile.php?id=100010417742895" target=""><RiFacebookCircleLine/></a></li>
-                <li><a href="https://twitter.com/i/flow/login"target="">< PiTwitterLogo/></a> </li>
                 <li><a href="https://github.com/" target=""><GrGithub/></a></li>
+                <li> <a href="https://www.linkedin.com/in/zaafouri-khouloud-3bb455151/" target=""><FaLinkedin/> </a></li>
             </IconContext.Provider>
             </ul>
         </div>        

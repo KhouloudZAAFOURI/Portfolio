@@ -16,8 +16,8 @@ export default function Section4() {
 
        <div id='experiences'>
 
-        <div id='experience'>
-        <MdOutlineWork id='icon' /> 
+         <div id='experience'>
+       <p id='icon'><MdOutlineWork /> </p>
         <h2> Experiences </h2>
         </div>
 
@@ -38,7 +38,7 @@ export default function Section4() {
 
        <div id='educations'>
         <div id='education'>
-        <FaGraduationCap id='icon' />
+        <p id='icon'><FaGraduationCap /></p>
         <h2> Education </h2>
         </div>
 

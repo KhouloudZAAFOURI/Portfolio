@@ -1,5 +1,4 @@
-
- #section3a {
+#section3a {
   
     width: 100%;
    
@@ -20,7 +19,6 @@
             color: var(--textColr);
             position: relative;
 
-
             #quote{
 
                 width: 75%;
@@ -31,6 +29,7 @@
                 font-size: 30px;
                 border-radius: 20px;
                 text-align: center;
+                z-index: 101;
 
             }
               span {
@@ -96,7 +95,7 @@
 
 /* Tooltip */
 
-/*  SOLUTION 1 osama zero*/
+/*  SOLUTION 1*/
 /* #quote::before{
     content: "";
     position: absolute;
@@ -138,13 +137,24 @@
 } */
 
 
-
     @media screen and (max-width:900px) {
    
             #coontainer3a{
                 flex-wrap: wrap;
                 justify-content: center; 
-        
-            }    
+                width: 100%;
+                text-align: start;
+            }   
+            #skills, #skillsProgress {
+                width: 100%;
+            } 
+            #tooltip {
+                width: 100%;
+                #quote {
+                    font-size: 20px !important;
+                    padding: 10px !important;
+
+                } 
+            }
           
         }

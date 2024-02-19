@@ -6,9 +6,7 @@ import cv from './../../imges/CV.pdf';
 export default function Section2() {
 
 const data =[
-{label:"Birthday",info:": 25.01.1997"},
 {label:"Phone",info:": +216 97138936"},
-{label:"Email",info:": khouloudzaafouri1@gmail.com"},
 {label:"From",info:": Tunisia"},
 {label:"Languages",info:": French - English"},
 {label:"Freelace",info:": Available"},
