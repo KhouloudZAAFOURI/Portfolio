@@ -1,21 +1,22 @@
 #section3a {
-  
     width: 100%;
+}
    
-    #coontainer3a{
+ #coontainer3a{
         display: flex;
         margin: 30px auto;
-     
+ } 
 
-     #skills {
+#skills {
         margin: 80px;
         width: 50% ;
+}
 
-        h1{
+#skills h1{
             font-size: 30px;
             color: var(--textColr);
-        }
-        #tooltip {
+}
+/* #tooltip {
             color: var(--textColr);
             position: relative;
 
@@ -43,54 +44,62 @@
                     height: 100px;
                     margin: 30px auto; 
                     }
-                }
-    }
-    #skillsProgress{
+ } */
+ #CODE {
+    animation: move 1s infinite alternate;
+    -moz-animation: move 1s infinite alternate ;
+    -webkit-animation: move 1s infinite alternate;
+    -o-animation: move 1s infinite alternate;
+}
+    
+#skillsProgress{
         width: 50% ;
         padding: 3%;
         color: var(--textColr);
+    }
 
-        #progresses{
+#progresses{
             width: 100%;
             margin: 2rem 0;
+    }
 
             /* TITLE HTML AND OTHER  */
-            h4{
+  #progresses h4{
                 margin: 10px 0;
                 font-size: 25px;
             }
 
-            #progess{
+ #progess{
                 width: 100%;
                 height: 5px;
                 background-color: var(--textColr);
+            }
 
-                /* THE PERCENT */
-                #level{
+ /* THE PERCENT */
+#level{
                     
                     height: 100%;
                     background-color:var(--SpanColr);
                     z-index: 3;
                     position: relative;
                     transition: 4s;
+}
 
 
-                   span{
+#level span{
                         position: absolute;
                         right: -25px;
                         top: -25px;
                         color: var(--SpanColr);
                     }
-                }
-                }
-        
-        }
-    }
-}
-    }
+
 #img:hover {
     transform:scale(1.1);
     opacity: .9;
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
 }
 
 /* Tooltip */
@@ -104,11 +113,15 @@
     bottom: -40px;
     left: 50%;
     transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
 } */
 
 /* SOLUTION 2  with a span on js  */
 
-#tooltip span{
+/* #tooltip span{
     
     position: absolute;
     height: 40px;
@@ -120,7 +133,7 @@
     left: 50%;
     transform: translateX(-50%) rotateZ(45deg);
     z-index: 3;
-}
+} */
 
 /* solution 3 */
 /* #quote::before{
@@ -136,6 +149,22 @@
     transform:rotateZ(45deg)translateX(-50%);
 } */
 
+@keyframes move {
+    0% {
+        transform:translateY(0px);
+        -moz-transform:translateY(0px);
+        -ms-transform:translateY(0px);
+        -o-transform:translateY(0px);
+        -webkit-transform:translateY(0px);
+}
+    100% {
+        transform: translateY(-25px);
+        -webkit-transform: translateY(-25px);
+        -moz-transform: translateY(-25px);
+        -ms-transform: translateY(-25px);
+        -o-transform: translateY(-25px);
+}
+}
 
     @media screen and (max-width:900px) {
    
@@ -148,13 +177,13 @@
             #skills, #skillsProgress {
                 width: 100%;
             } 
-            #tooltip {
+            /* #tooltip {
                 width: 100%;
                 #quote {
                     font-size: 20px !important;
                     padding: 10px !important;
 
-                } 
+                }  */
             }
           
-        }
+        

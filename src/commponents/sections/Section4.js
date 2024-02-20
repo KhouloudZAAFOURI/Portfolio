@@ -24,13 +24,13 @@ export default function Section4() {
         <div id='exps'>
         <div id='exp'>
         <h2>Front End Developer </h2>
-        <h3> Jan 2020 - Present </h3>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h3> October 2022 - Present </h3>
+        <p> Info Smile startup </p>
         </div>
         <div id='exp'>
-        <h2>Front End Developer</h2>
-        <h3> Jan 2016 - December 2019 </h3>
-        <p> Lorem ipsum dolor sit amet</p>
+        <h2>Web Trainer</h2>
+        <h3> January 2022 - August 2022 </h3>
+        <p> EPAA Academy School</p>
         </div>
         </div>
 

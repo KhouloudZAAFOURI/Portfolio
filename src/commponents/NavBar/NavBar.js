@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./NavBar.css";
-import { WiMoonAltThirdQuarter } from "react-icons/wi";
+import { MdOutlineDarkMode } from "react-icons/md";
 import { GiTwirlyFlower } from "react-icons/gi";
 import { Link } from "react-scroll";
 
@@ -33,7 +33,7 @@ function NavBar() {
     {title:"contact", path:"section6"}
 ]
 //  for desktop screen 
-//  it is important to make in fornt of the return a such code 
+//  it is important to make in front of the return a such code 
 const dataNavShow= dataNav.map((e, index)=>{
   return   <li key={index}>
     <Link
@@ -76,10 +76,10 @@ const dataNavShow= dataNav.map((e, index)=>{
         <div className="logo">
           <GiTwirlyFlower id="flower"fontSize={"25px"} />
           <p>khouloud</p>
-          <WiMoonAltThirdQuarter id='dark' fontSize={"25px"} onClick={mode} cursor={"pointer"}/>
+          <MdOutlineDarkMode  id='dark' fontSize={"25px"} onClick={mode} cursor={"pointer"}/>
         </div>
 
-{/* le navBar on the normal screen */}
+{/* the navBar on the normal screen */}
        <ul id="navlist"> {dataNavShow} </ul>
 
 {/* the animation that replace the 3 spans to X sign */}

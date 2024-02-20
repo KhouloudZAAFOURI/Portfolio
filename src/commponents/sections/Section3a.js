@@ -1,7 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
 import "./Section3a.css"
-import robert from "../../imges/robert.jpg";
+// import robert from "../../imges/robert.jpg";
+import img from './../../imges/image_s2.jpg';
 
 export default function Section3a() {
 
@@ -57,13 +58,15 @@ return  <div id="progresses" key={index}>
 
         <div id="skills">
          <h1>All the skills that I have in that field of work are mentioned.</h1>
-         <div id="tooltip">
+         {/* <div id="tooltip">
           <p id='quote'>" The future belongs to those who learn more skills and combine them
           in creative ways."
           </p>
          <span></span> 
          <img id='img' src={robert} alt=""/>
-        </div>
+        </div> */}
+          <img id='CODE' src={img} alt="" style={{margin:"20px"}}></img>
+    
         </div>
 
 
